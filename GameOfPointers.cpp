@@ -24,6 +24,6 @@ int main() {
 
     // print the eldest student name
     //  - what's your guess?
-    std::cout<<"[Ageing Potion] Apparently"<< eldest->name <<" is the eldest here." << std::endl;
+    std::cout<<"[Ageing Potion] Apparently '"<< eldest->name <<"' is the eldest here." << std::endl;
     return 0;
 }
