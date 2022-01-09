@@ -1,6 +1,10 @@
-build_cpp: *.cpp
+all: build_cpp
+
+build/%: %.cpp
 	mkdir -p build
-	g++ GameOfPointers.cpp -o build/game_of_pointers
+	g++ $< -o $@
+
+build_cpp: $(addprefix build/,$(basename $(wildcard *.cpp)))
 
 clean:
 	rm -rf build/
